@@ -1,21 +1,23 @@
+site-url: https://www.marceloomens.com
+publish-mode: editorial_workflow
 backend:
   name: github
   repo: marceloomens/twenty19
   branch: master
 collections:
 - name: "posts"
-  label: "Updates"
+  label: "Cards"
+  label_singular: "Card"
   folder: "content/posts"
   create: true
   slug: "{{slug}}"
   fields:
   - {label: "Title", name: "title", widget: "string"}
   - {label: "Icon", name: "icon", widget: "string"}
-  - {label: "Featured image", name: "image", widget: "image"}
-  - {label: "Date", name: "sticky", widget: "boolean", default: false}
-  - {label: "Sticky", name: "sticky", widget: "boolean", default: false}
+  - {label: "Image", name: "image", widget: "image"}
+  - {label: "Date", name: "date", widget: "hidden"}
+  - {label: "Draft", name: "draft", widget: "hidden", default: false}
   - {label: "Sticky", name: "sticky", widget: "boolean", default: false}
   - {label: "Content", name: "body", widget: "markdown"}
-publish-mode: editorial_workflow
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
