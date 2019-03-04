@@ -13,7 +13,7 @@ collections:
   slug: "{{slug}}"
   fields:
   - {label: "Title", name: "title", widget: "string"}
-  - {label: "Icon", name: "icon", widget: "string"}
+  - {label: "Icon (entypo.com)", name: "icon", widget: "string"}
   - {label: "Image", name: "image", widget: "image"}
   - {label: "Date", name: "date", widget: "hidden"}
   - {label: "Draft", name: "draft", widget: "hidden", default: false}
