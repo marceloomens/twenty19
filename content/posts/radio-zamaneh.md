@@ -5,4 +5,4 @@ image: /images/uploads/zamaneh.png
 draft: false
 sticky: false
 ---
-<p class="card-body"><a href="https://en.radiozamaneh.com">English</a> | <a href="https://www.radiozamaneh.com">فارسی</a></p>
+<p class="card-text"><a href="https://en.radiozamaneh.com">English</a> | <a href="https://www.radiozamaneh.com">فارسی</a></p>
