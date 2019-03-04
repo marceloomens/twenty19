@@ -10,10 +10,12 @@ collections:
   slug: "{{slug}}"
   fields:
   - {label: "Title", name: "title", widget: "string"}
-  - {label: "Content", name: "body", widget: "markdown"}
-  - {label: "Sticky", name: "sticky", widget: "boolean", default: false}
   - {label: "Icon", name: "icon", widget: "string"}
   - {label: "Featured image", name: "image", widget: "image"}
+  - {label: "Date", name: "sticky", widget: "boolean", default: false}
+  - {label: "Sticky", name: "sticky", widget: "boolean", default: false}
+  - {label: "Sticky", name: "sticky", widget: "boolean", default: false}
+  - {label: "Content", name: "body", widget: "markdown"}
 publish-mode: editorial_workflow
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
