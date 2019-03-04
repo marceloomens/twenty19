@@ -1,0 +1,24 @@
+<div id="blogroll" class="row">
+{{ range first 2 (where .Pages ".Params.sticky" false) }}
+  <div class="col-6 col-sm-3">
+    <div class="card">
+      <img class="card-img-top" src="{{ .Params.image }}" alt=".Title">
+      <div class="card-body">
+        <h5 class="card-title">{{ if .Params.icon }}<span class="icon icon-{{ .Params.icon }}"></span> {{ end }}{{ .Title }}</h5>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+{{ end }}
+{{ range first 2 (where .Pages ".Params.sticky" true) }}
+  <div class="col-6 col-sm-3">
+    <div class="card">
+      <img class="card-img-top" src="{{ .Params.image }}" alt=".Title">
+      <div class="card-body">
+        <h5 class="card-title">{{ if .Params.icon }}<span class="icon icon-{{ .Params.icon }}"></span> {{ end }}{{ .Title }}</h5>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+{{ end }}
+</div>

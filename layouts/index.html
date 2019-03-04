@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="block block-inverse block-fill-height text-center py-0">
+  <div class="block-foreground">
+    <div class="container d-flex flex-column justify-content-end align-items-center">
+      <div class="row d-sm-none">
+        <div class="col">
+          <h1 class="block-title">
+            <strong class="text-ribbon text-ribbon-secondary">{{ .Title }}</strong>
+          </h1>
+          <h4 class="text-muted">
+            <strong class="text-ribbon text-ribbon-primary">{{ .Params.Lead }}</strong>
+          </h4>
+        </div>
+      </div>
+      <div class="row d-none d-sm-block w-75">
+        <div class="col">
+          <h1 class="block-title">
+            <strong class="text-ribbon text-ribbon-secondary">{{ .Title }}</strong>
+          </h1>
+          <h4 class="text-muted">
+            <strong class="text-ribbon text-ribbon-primary">{{ .Params.Lead }}</strong>
+          </h4>
+        </div>
+      </div>
+      {{ partial "blogroll.html" . }}
+    </div>
+  </div>
+  <div class="block-background text-left">
+    <div id="background-map"></div>
+  </div>
+</div>
+{{ end }}
