@@ -1,5 +1,5 @@
-site-url: https://www.marceloomens.com
-publish-mode: editorial_workflow
+site_url: https://www.marceloomens.com
+publish_mode: editorial_workflow
 backend:
   name: github
   repo: marceloomens/twenty19
